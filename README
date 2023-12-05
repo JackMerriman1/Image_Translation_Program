@@ -1,0 +1,15 @@
+converts an image of text into actual text of whichever language you desire!
+
+Most used 2-letter language codes - 
+English: 'en'
+French: 'fr'
+Spanish: 'es'
+German: 'de'
+Italian: 'it'
+Japanese: 'ja'
+Chinese: 'zh'
+Russian: 'ru'
+Arabic: 'ar'
+Hindi: 'hi'
+    
+go to https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes for a complete list of language codes
