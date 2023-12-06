@@ -4,15 +4,13 @@ import pytesseract
 from googletrans import Translator
 
 def translate(image_path,input_lang,output_lang,tesseract_path):
+    
     pytesseract.pytesseract.tesseract_cmd = tesseract_path
     image=Image.open(image_path)
     result = pytesseract.image_to_string(image)
-
     try:
         translator=Translator()
-        print(translator.translate(text=result,src=input_lang, dest=output_lang))        
-    #print(translate("E:/IMAGES/newspaper_01sep1039.jpg", "en", "ar", "C:/Program Files/Tesseract-OCR/tesseract"))
-        
+        print(translator.translate(text=result,src=input_lang, dest=output_lang))         
     except NameError:
         print("Name Error: Make sure you use a 'String' for the input_lang and output_lang")
     
